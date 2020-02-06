@@ -44,12 +44,12 @@ INSTALLED_APPS = [
    'django.contrib.contenttypes',
    'django.contrib.sessions',
    'django.contrib.messages',
-   'whitenoise.runserver_nostatic',
    'django.contrib.staticfiles',
    
    #3rd party
    'rest_framework',
    'corsheaders',
+   'whitenoise.runserver_nostatic',
    # Local
    'cellar_app.apps.CellarAppConfig',
  

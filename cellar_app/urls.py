@@ -1,7 +1,7 @@
 from django.urls import path
-# from .views import 
+from .views import BottleList, BottleListDetail
 
 urlpatterns = [
-    path('api/v1/', MyView.as_view(),name='my_view')
+    path('bottles/', BottleList.as_view(), name='bottle_list'),
+    path('bottles/<int:pk>/', BottleListDetail.as_view(), name='bottle_list'),
 ]
-
